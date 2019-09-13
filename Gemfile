@@ -46,5 +46,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "active_model_serializers", "~> 0.10.7"
 
 # Faker for data generation
-
 gem 'faker'
+
+# Gem to listen to webhooks (for when issue is created)
+gem 'github_webhook', '~> 1.1'
+
+# Gem to connect to the github API
+gem "octokit", "~> 4.0"
