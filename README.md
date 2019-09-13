@@ -7,15 +7,15 @@ This README will cover the required steps to get this back-end running for the [
 * ngrok (for allowing outside connections to our local development)
 * Github API
 
-### Database creation
-* Run `rails db:migrate` to setup the database. This will update our schema with the required fields.
-
-* Run `rails db:seed` to add some seed data into the database.
-
 ### Configuration
 * `git clone <repository-url>` this repository
 * `cd bookstore-api`
 * `bundle install`
+
+#### Database creation
+* Run `rails db:migrate` to setup the database. This will update our schema with the required fields.
+
+* Run `rails db:seed` to add some seed data into the database.
 
 * We are going to be using the Octokit gem to run our requests for the Github API, and the Github Webhook gem to process issues connected to this repo.
 
