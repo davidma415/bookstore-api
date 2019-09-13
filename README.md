@@ -21,9 +21,9 @@ This README will cover the required steps to get this back-end running for the [
 
 * Update the `lib/tasks/create-authors.rake` file with your OAuth token if you have OAuth enabled. Otherwise, you can use basic authorization (the code is commented out).
 
-* Next, use ngrok to setup the tunnel to allow outside connections. ngrok can be downloaded at the following [link](https://ngrok.com/download). Once you have downloaded, change into the directory where you have it downloaded and unzip the file. After unzipping, run `./ngrok http 3000`, since this is the port that our Rails server is running on. Keep note of the url that it generates (ends with ngrok.io);
+* Next, use ngrok to setup the tunnel to allow outside connections. ngrok can be downloaded at the following [link](https://ngrok.com/download). Once you have downloaded, change into the directory where you have it downloaded and unzip the file. After unzipping, run `./ngrok http 3000`, since this is the port that our Rails server is running on. Keep note of the url that it generates (ends with ngrok.io).
 
-* Run rails s to start your server, and also start the [front-end client](https://github.com/davidma415/bookstore-client).
+* Run `rails s` to start your server, and also start the [front-end client](https://github.com/davidma415/bookstore-client).
 
 ### Webhook Configuration
 * Visit this [link](https://github.com/davidma415/bookstore-api/settings/hooks) to add your webhook.
