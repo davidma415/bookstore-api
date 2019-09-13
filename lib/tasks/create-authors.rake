@@ -4,6 +4,10 @@ task :create_authors do
   # Replace the access token with your OAuth string.
   client = Octokit::Client.new(:access_token => 'replace with oauth')
 
+  # Uncomment this and use this if you don't need OAuth authorization.
+  # client = Octokit::Client.new(:login => 'login', :password => 'password')
+
+
   3.times do
     name = Faker::Name.first_name + ' ' + Faker::Name.last_name
     biography = Faker::Lorem.paragraph(sentence_count: 7)
