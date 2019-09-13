@@ -23,8 +23,6 @@ This README will cover the required steps to get this back-end running for the [
 
 * Next, use ngrok to setup the tunnel to allow outside connections. ngrok can be downloaded at the following [link](https://ngrok.com/download). Once you have downloaded, change into the directory where you have it downloaded and unzip the file. After unzipping, run `./ngrok http 3000`, since this is the port that our Rails server is running on. Keep note of the url that it generates (ends with ngrok.io).
 
-* Run `rails s` to start your server, and also start the [front-end client](https://github.com/davidma415/bookstore-client).
-
 ### Webhook Configuration
 * Visit this [link](https://github.com/davidma415/bookstore-api/settings/hooks) to add your webhook.
 
@@ -35,6 +33,8 @@ This README will cover the required steps to get this back-end running for the [
 * Enter what you want for the webhook secret. For what you put in here, change the `GITHUB_WEBHOOK_SECRET` in `config/app_environment_variables.rb` to what you put in this field.
 
 * For events, we only want issues.
+
+* Run `rails s` to start your server, and also start the [front-end client](https://github.com/davidma415/bookstore-client).
 
 * Once you add this webhook, the Rails server should be running along with ngrok. With this all setup, we should be able to run `rake create_authors` to populate the repo with some issues.
 
