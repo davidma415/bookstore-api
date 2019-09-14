@@ -30,7 +30,7 @@ This README will cover the required steps to get this back-end running for the [
 
 * Content type will be JSON.
 
-* Enter what you want for the webhook secret. For what you put in here, change the `GITHUB_WEBHOOK_SECRET` in `config/app_environment_variables.rb` to what you put in this field.
+* Enter what you want for the webhook secret. For what you put in here, change the `GITHUB_WEBHOOK_SECRET` in `/environment.rb` to what you put in this field.
 
 * For events, we only want issues.
 
