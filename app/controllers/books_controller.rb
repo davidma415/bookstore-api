@@ -3,7 +3,7 @@ class BooksController < ApplicationController
 
   # GET /books
   def index
-    @books = Book.limit(params[:limit])
+    @books = Book.order(created_at: :desc).limit(params[:limit])
     render json: @books, include: ['author'], meta: { total: Book.count }
   end
 
